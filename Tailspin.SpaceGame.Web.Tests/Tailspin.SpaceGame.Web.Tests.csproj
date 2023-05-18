@@ -13,12 +13,10 @@
 
   <ItemGroup>
     <EmbeddedResource Include="SampleData\profiles.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="SampleData\scores.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 

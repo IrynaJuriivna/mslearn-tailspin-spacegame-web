@@ -24,10 +24,10 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SampleData\profiles.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="SampleData\scores.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 </Project>
