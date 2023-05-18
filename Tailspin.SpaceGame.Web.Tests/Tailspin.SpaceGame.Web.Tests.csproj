@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="SampleData\profiles.json" />
-    <None Remove="SampleData\scores.json" />
+    <Content Remove="SampleData\profiles.json" />
+    <Content Remove="SampleData\scores.json" />
   </ItemGroup>
 
   <ItemGroup>
