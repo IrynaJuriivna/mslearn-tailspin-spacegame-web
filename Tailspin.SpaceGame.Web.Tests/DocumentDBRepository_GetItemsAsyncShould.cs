@@ -16,7 +16,7 @@ namespace Tests
         [SetUp]
         public void Setup()
         {
-            var fileLocation = "SampleData\\scores.json";
+            var fileLocation = "SampleData/scores.json";
             _scoreRepository = new LocalDocumentDBRepository<Score>(fileLocation);
         }
 
