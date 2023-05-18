@@ -1,9 +1,11 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using TailSpin.SpaceGame.Web;
 using TailSpin.SpaceGame.Web.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace Tests
 {
@@ -14,12 +16,8 @@ namespace Tests
         [SetUp]
         public void Setup()
         {
-            using (System.IO.Stream scoresData = typeof(IDocumentDBRepository<Score>)
-                .Assembly
-                .GetManifestResourceStream("Tailspin.SpaceGame.Web.SampleData.scores.json"))
-            {
-                _scoreRepository = new LocalDocumentDBRepository<Score>(scoresData.ToString());
-            }
+            var fileLocation = "SampleData\\scores.json";
+            _scoreRepository = new LocalDocumentDBRepository<Score>(fileLocation);
         }
 
         [TestCase("Milky Way")]
