@@ -7,15 +7,14 @@ trigger:
     - docs/*  # exclude the docs folder
   
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-20.04'
   demands:
   - npm
 
 variables:
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-  dotnetSdkVersion: '6.x'
-  buildConfiguration: 'Release'
-  
+  dotnetSdkVersion: '2.1.505'
+
 steps:
 - task: UseDotNet@2
   displayName: 'Use .NET SDK $(dotnetSdkVersion)'
