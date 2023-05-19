@@ -21,6 +21,6 @@
     </EmbeddedResource>
   </ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.1.0-CI-20210528-202436" />
+		<PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.1.0-CI-20230518-200602" />
 	</ItemGroup>
 </Project>
